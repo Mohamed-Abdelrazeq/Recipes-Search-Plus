@@ -1,17 +1,12 @@
 import { useState } from 'react';
-import useFetchRecipes from '../Hooks/FetchAll';
 
-const SearchBar = () => {
+const SearchBar = (propes) => {
+
+    const setSearchQuery = propes.setSearchQuery;
 
     const [searchKeyWord , setSearchKeyWord] = useState('');
-    const [searchQuery , setSearchQuery] = useState('');
 
     const upDateSearch = e => {setSearchKeyWord(e.target.value);}
-
-    const [hits , isPending] = useFetchRecipes(searchQuery);
-
-    console.log(hits);
-    console.log(isPending);
 
     return ( 
         <div className="search-bar">
@@ -21,7 +16,6 @@ const SearchBar = () => {
             type="submit" 
             onClick={
                 () => {
-                    console.log(searchKeyWord);
                     setSearchQuery(searchKeyWord);
                 }
             }>search</button>

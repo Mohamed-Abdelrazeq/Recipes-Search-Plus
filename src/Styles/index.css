@@ -102,7 +102,7 @@ input{
   height: 150px;
   border-radius: 50%;
   color: #75C5CA00;
-  background-image: url("../images/bla.jpg");
+  /* background-image: url("../images/bla.jpg"); */
   background-position: center;
   background-size: cover;
   margin-bottom: 20px;

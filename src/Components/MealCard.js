@@ -5,16 +5,15 @@ const MealCard = (probs) => {
     if(!probs.isPending){
         return <div className="meals-area">
         {
-
             hits.map((hit) => {
-                    return  <div className="all">
+                    return  <div className="all" key={hit.recipe.calories + hit.recipe.label}>
                                 <img src={hit.recipe.image} className="meal-img" alt="" />
                                 <div className="meal-card">
                                     <div className="text">
                                         <h3>{hit.recipe.label}</h3>
                                         <div className="cards">
                                         {hit.recipe.dietLabels.map((label)=>{
-                                            return <div className="card">{label}</div>
+                                            return <div className="card" key={label}>{label}</div>
                                         })}
                                         </div>
                                     </div>
