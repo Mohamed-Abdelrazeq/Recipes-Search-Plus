@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
-  color: #333;
+  font-family: "Roboto";
+  color: #121135;
 }
 
 h1{
@@ -12,53 +13,23 @@ h1{
   justify-content: center;
 }
 
+h3{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+Link{
+  text-decoration: none;
+}
+
 /* App */
 
 .App{
-  max-width: 100vw;
   min-height: 100vh;
-  background-image: url("../images/bg.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;}
-
-/* SearchBar */
-
-.search-bar{
-  width: 70%;
-  margin: 0 15%;
-  padding: 25px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.search-btn{
-  background-color: #75C5CA80;
-  color: #343434;
-  font-weight: 500;
-  font-size: 1rem;
-  flex: 1;
-  height: 50px;
-  border: none;
-  border-radius: 10px;
-  margin-left: 35px ;
-}
-
-input{
-  flex: 3;
-  align-items: center;
-  justify-content: center;
-  background-color: #75C5CA80;
-  border: none;
-  border-radius: 10px;
-  width: 800px;
-  padding: 0 50px;
-  font-weight: 500;
-  font-size: 1rem;
-  outline: none;
-  color: #343434;
-}
 
 /* MealCard */
 
@@ -102,7 +73,6 @@ input{
   height: 150px;
   border-radius: 50%;
   color: #75C5CA00;
-  /* background-image: url("../images/bla.jpg"); */
   background-position: center;
   background-size: cover;
   margin-bottom: 20px;
