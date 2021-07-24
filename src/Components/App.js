@@ -1,10 +1,12 @@
-import {BrowserRouter as Router , Route ,Switch} from 'react-router-dom';
+import {BrowserRouter as Router } from 'react-router-dom';
 import useFetchRecipes from '../Hooks/FetchAll';
 import MealCard from './MealCard';
 import SearchBar from './SearchBar';
 
 function App() {  
-  const [hits , isPending] = useFetchRecipes("ice cream");
+
+  const [hits , isPending] = useFetchRecipes("chicken");
+
   return (
     <Router>
 

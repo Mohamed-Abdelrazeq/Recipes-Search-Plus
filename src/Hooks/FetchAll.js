@@ -17,19 +17,6 @@ const useFetchRecipes = (mealName) => {
       const jsonResponse = await requestResponse.json();
     
       setHits(await jsonResponse.hits);
-    
-      // console.log(jsonResponse);
-
-      // hits.map((meal) => {
-      //   console.log(meal.recipe.yield);
-      //   console.log(Math.floor(meal.recipe.calories));
-      //   console.log(meal.recipe.label);
-      //   console.log(meal.recipe.image);
-      //   console.log(measl.recipe.url);
-      //   console.log(measl.recipe.dietLabels);
-      //   console.log(meal.recipe.ingredientLines);
-      // })
-
       setIsPending(false);
       }
 

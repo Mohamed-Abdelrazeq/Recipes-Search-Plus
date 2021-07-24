@@ -10,6 +10,9 @@ const SearchBar = () => {
 
     const [hits , isPending] = useFetchRecipes(searchQuery);
 
+    console.log(hits);
+    console.log(isPending);
+
     return ( 
         <div className="search-bar">
             <input type="text" value={searchKeyWord} onChange={upDateSearch} />
@@ -21,8 +24,7 @@ const SearchBar = () => {
                     console.log(searchKeyWord);
                     setSearchQuery(searchKeyWord);
                 }
-            }>
-                search</button>
+            }>search</button>
         </div>
      );
 }
