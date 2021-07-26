@@ -4,6 +4,10 @@ import App from './Components/App';
 // Styles
 import './Styles/index.css';
 import './Styles/landing.css';
+import './Styles/search.css';
+import './Styles/meal-card.css';
+
+
 
 
 

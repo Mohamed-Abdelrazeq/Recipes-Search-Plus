@@ -7,6 +7,9 @@
 
 
 
+
+
+
 .navbar{
     display: flex;
     align-items: center;
@@ -46,7 +49,6 @@
 
 
 
-
   .main{
     display: flex;
     flex-direction: row;
@@ -56,7 +58,9 @@
   .main .text{
     flex: 1;
     max-width: 500px;
-    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 8%;
   }
   
@@ -89,29 +93,3 @@
     font-size: 1.5rem;
   }
   
-  .search-btn{
-    background-color: #75C5CA80;
-    color: #343434;
-    font-weight: 500;
-    font-size: 1rem;
-    flex: 1;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    margin-left: 35px ;
-  }
-  
-  input{
-    flex: 3;
-    align-items: center;
-    justify-content: center;
-    background-color: #75C5CA80;
-    border: none;
-    border-radius: 10px;
-    width: 800px;
-    padding: 0 50px;
-    font-weight: 500;
-    font-size: 1rem;
-    outline: none;
-    color: #343434;
-  }
