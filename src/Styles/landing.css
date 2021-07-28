@@ -1,53 +1,8 @@
-/* LandingPage */
 
 .landing-page{
-    height: 100vh;
+  background-color: #fbfbfb;
 }
-
-
-
-
-
-
-
-.navbar{
-    display: flex;
-    align-items: center;
-    height: 125px;
-    padding: 0 8%;
-  }
-  
-  .logo{
-    height: 76px;
-    width: 110px;
-    color: #33333300;
-    background-image: url("../images/Logo.png");
-    border-radius: 15px;
-    background-size: cover;
-    margin-right: 140px;
-  }
-  
-  .img{
-    color: #33333300;
-    background-size: cover;
-  }
-  
-  .tabs{
-    display: flex;
-    align-items: center;
-  }
-  
-  .tabs h3{
-    margin-right: 120px;
-    text-decoration: none;
-  }
-  
-
-
-
-
-
-
+/* Section 1 */
 
   .main{
     display: flex;
@@ -93,3 +48,218 @@
     font-size: 1.5rem;
   }
   
+
+  /* Section About Recipes */
+
+.about-recipes{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header{
+    font-size: 4rem;
+    font-weight: 300;
+    color: #121135;
+    margin:  40px 0;
+  }
+
+.about-hr{
+  margin: auto;
+  width: 220px;
+  border: 0; border-top: 1px solid #c50a0a;
+  margin-bottom: 80px;
+}
+
+.about-cards{
+  display: flex;
+  padding: 0 12%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-about{
+  background-color: white;
+  background-image: url("../images/bgSticker.png");
+  background-size: cover;
+  box-shadow: 3px 6px #88888833;
+  width: 300px;
+  height: 240px;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 120px;
+}
+
+.card-name-about{
+  color: #c50a0a;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.text-about {
+    color: #5E5E5E;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Our Story */
+
+.story{
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/story-bg.png");
+}
+
+.story-card{
+  margin: 100px;
+  background-color: white;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.img-story{
+  background-image: url("../images/story-img.png");
+  flex: 2;
+}
+
+.story-text-section{
+  flex: 3;
+  padding: 75px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discover{
+  font-size: 3.5rem;
+  font-family: "Alex Brush";
+}
+
+.story-header{
+  font-size: 3.5rem;
+  color : #121135;
+}
+
+.the-story{
+  font-size: 1.4rem;
+  color: #5E5E5E;
+  font-weight: 300;
+}
+
+/* Sub */
+
+.sub{
+  padding: 120px 12vw;
+}
+
+.sub-card{
+  background-image: url("../images/sub-bg.png");
+  padding: 75px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 15px;
+}
+
+.sub-text{
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.sub-bar{
+  display: flex;
+  flex-direction: row;
+  width: calc( 100vw - 180px - 24vw );
+
+}
+
+.sub-mail{
+  flex: 5;
+  margin-right: 20px;
+  background-color: white;
+  border: none;
+}
+
+.sub-btn{
+  flex: 2;
+  border-radius: 250px;
+  background-color: #c50a0a;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-image: url("../images/footer-bg.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: space-between;
+  padding: 50px 12vw; 
+}
+
+
+.the-contacts{
+  padding-left: 50px;
+}
+
+.qr{
+  background-image: url("../images/qr.png");
+  width: 282px;
+  height: 266px;
+}
+
+.a-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer-header{
+  justify-content: start;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.footer .img{
+  margin-right: 20px;
+} 
+
+.icon1{
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/Facebook.png");
+}
+
+.icon2{
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/Whatsapp.png");
+}
+
+.icon3{
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/Instagram.png");
+}

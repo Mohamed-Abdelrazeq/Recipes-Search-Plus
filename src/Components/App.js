@@ -6,6 +6,7 @@ import Contact from './Contact';
 import LandingPage from './LandingPage';
 import MealCard from './MealCard';
 import SearchBar from './SearchBar';
+import Navbar from "./Navbar";
 
 function App() {  
 
@@ -16,7 +17,7 @@ function App() {
     <Router>
 
         <div className="App">
-
+        <Navbar/>
           <Switch>
 
 

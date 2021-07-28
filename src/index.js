@@ -5,6 +5,7 @@ import App from './Components/App';
 import './Styles/index.css';
 import './Styles/landing.css';
 import './Styles/search.css';
+import './Styles/navbar.css';
 import './Styles/meal-card.css';
 
 
